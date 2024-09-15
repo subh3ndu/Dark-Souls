@@ -1,0 +1,109 @@
+{
+    "name": "PlayerControls",
+    "maps": [
+        {
+            "name": "PlayerMovement",
+            "id": "14b6104c-7b1f-4bda-99ae-e1539d2b21dc",
+            "actions": [
+                {
+                    "name": "Movement",
+                    "type": "PassThrough",
+                    "id": "99b840f3-23a7-4848-93d3-e215a153d73e",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Camera",
+                    "type": "Button",
+                    "id": "5e47c252-3282-4f59-8fbc-eb9f33c2ab6a",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "WASD",
+                    "id": "8db463a0-d2b0-4fc0-a222-e2c4a840e517",
+                    "path": "2DVector(mode=2)",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "5189eb41-b528-4e08-8ff9-b3233a141bb9",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "e0090122-a2aa-4904-ab70-78a4c590e204",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "aa7bccaa-e450-49b5-9103-5c011dedf3ed",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "b827778a-0712-4544-a0b3-fcdb249b1757",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "b28a9970-5edc-4111-9462-1a8bcf8af71a",
+                    "path": "<Gamepad>/rightStick/down",
+                    "interactions": "",
+                    "processors": "AxisDeadzone",
+                    "groups": "",
+                    "action": "Camera",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fe0dc86f-aa61-428b-bb50-1095003769f9",
+                    "path": "<Mouse>/{SecondaryAction}",
+                    "interactions": "",
+                    "processors": "Normalize",
+                    "groups": "",
+                    "action": "Camera",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
